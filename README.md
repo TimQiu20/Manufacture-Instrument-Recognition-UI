@@ -1,8 +1,11 @@
 Release Notes version Manufacture Instrument Cognition UI 1.0
 
 NEW FEATURES
+
 	- Deleted Album Icon and page.
+	
 	- Connected to the Google Could backend
+	
 	- Added a new page for screw cognition results.
 	
 BUG FIXES
