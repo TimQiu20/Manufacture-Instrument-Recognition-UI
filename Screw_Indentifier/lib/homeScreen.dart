@@ -65,8 +65,7 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
                               homeList.length,
                               (index) {
                                 var count = homeList.length;
-                                var animation =
-                                    Tween(begin: 0.0, end: 1.0).animate(
+                                var animation = Tween(begin: 0.0, end: 1.0).animate(
                                   CurvedAnimation(
                                     parent: animationController,
                                     curve: Interval((1 / count) * index, 1.0,
@@ -78,6 +77,7 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
                                   animation: animation,
                                   animationController: animationController,
                                   listData: homeList[index],
+                                  index: index,
                                   callBack: () {
                                     Navigator.push(
                                       context,
@@ -174,16 +174,32 @@ class HomeListView extends StatelessWidget {
   final VoidCallback callBack;
   final AnimationController animationController;
   final Animation animation;
+  final int index;
 
   const HomeListView(
       {Key key,
       this.listData,
       this.callBack,
       this.animationController,
-      this.animation})
+      this.animation,
+      this.index})
       : super(key: key);
   @override
   Widget build(BuildContext context) {
+    String label;
+    switch (index) {
+      case 0:
+        label = 'Take Photo';
+        break;
+      case 1:
+        label = 'History';
+        break;
+      case 2:
+        label = 'Account';
+        break;
+      default:
+        label = '';
+    }
     return AnimatedBuilder(
       animation: animationController,
       builder: (BuildContext context, Widget child) {
@@ -211,6 +227,23 @@ class HomeListView extends StatelessWidget {
                         onTap: () {
                           callBack();
                         },
+                      ),
+                    ),
+                    Align(
+                      alignment: Alignment.bottomCenter,
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.all(Radius.circular(7.5)),
+                        child: Container(
+                          color: Colors.white,
+                          child: Padding(
+                            padding: EdgeInsets.all(8.5),
+                            child: Text(
+                              label,
+                              textAlign: TextAlign.center,
+                              style: TextStyle(fontSize: 16, color: Colors.black, fontWeight: FontWeight.bold),
+                            ),
+                          ),
+                        ),
                       ),
                     ),
                   ],

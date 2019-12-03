@@ -18,10 +18,10 @@ class HomeList {
       imagePath: "assets/take_photo/takephotoIcon.png",
       navigateScreen: Takephotocreen(),
     ),
-    HomeList(
-      imagePath: "assets/album/albumIcon.png",
-      navigateScreen: AlbumScreen(),
-    ),
+    // HomeList(
+    //   imagePath: "assets/album/albumIcon.png",
+    //   navigateScreen: AlbumScreen(),
+    // ),
     HomeList(
       imagePath: "assets/history/historyIcon.png",
       navigateScreen: HistoryScreen(),

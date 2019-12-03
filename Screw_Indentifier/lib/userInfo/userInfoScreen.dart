@@ -44,7 +44,16 @@ class _UserInfoScreenState extends State<UserInfoScreen> with TickerProviderStat
                               delegate: SliverChildBuilderDelegate((BuildContext context, int index) {
                                 return Column(
                                   children: <Widget>[
-
+                                    Text(
+                                      "\nUser: Sample User",
+                                      textAlign: TextAlign.left,
+                                      style: TextStyle(fontSize: 20),
+                                    ),
+                                    Text(
+                                      "\nEmail: sample.user@example.com",
+                                      textAlign: TextAlign.left,
+                                      style: TextStyle(fontSize: 20),
+                                    ),
                                   ],
                                 );
                               }, childCount: 1),

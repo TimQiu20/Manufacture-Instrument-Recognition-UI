@@ -1,4 +1,5 @@
 import 'dart:ui';
+import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
 import 'historyTheme.dart';
 
@@ -43,7 +44,10 @@ class _HistoryScreenState extends State<HistoryScreen> with TickerProviderStateM
                               delegate: SliverChildBuilderDelegate((BuildContext context, int index) {
                                 return Column(
                                   children: <Widget>[
-
+                                    Text(
+                                      "\nFeature in progress!",
+                                      style: TextStyle(fontSize: 20),
+                                    ),
                                   ],
                                 );
                               }, childCount: 1),

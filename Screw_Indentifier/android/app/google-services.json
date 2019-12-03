@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "999225141736",
+    "firebase_url": "https://screw-identifier.firebaseio.com",
+    "project_id": "screw-identifier",
+    "storage_bucket": "screw-identifier.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:999225141736:android:6d09d07d86b2d0c5429c5d",
+        "android_client_info": {
+          "package_name": "com.example.best_flutter_ui_templates"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "999225141736-rnrrj2dpn8b2lh16n3m7s12m8btpo2gf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDvAxQ4fOoUkifTqhQl-qw-_rV-eVMu3w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "999225141736-rnrrj2dpn8b2lh16n3m7s12m8btpo2gf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
