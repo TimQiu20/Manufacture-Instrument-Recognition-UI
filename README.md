@@ -1,6 +1,8 @@
 # Manufacture Instrument Recognition: SmartViz
 This repo contains the SmartViz application, which is the front-end app for the Manufacture Instrument Recognition project. This is a Flutter application, intended to be cross-platform. With this app, you can take a picture of a screw on a template, and retrieve screw length and thread pitch!
 
+Demo Video: https://drive.google.com/file/d/1Jud8COZVeY7gPwC3oTHa9HNcwxh2bJVa/view?usp=sharing
+
 ## Release Notes (version 1.0)
 
 ### New Features
